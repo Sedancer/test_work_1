@@ -1,0 +1,452 @@
+
+
+
+
+
+/*-----_1_------ fonts---------------------*/
+/*-----_2_------ HTML5 Reset---------------*/
+/*-----_3_-------Разметка страницы---------*/
+/*-----_4_-------Стили текста--------------*/
+/*-----_5_-------Рейтинг ------------------*/
+/*-----_6_-------Кнопка купить ------------*/
+
+
+
+
+/*-----_1_------ fonts---------------*/
+
+@font-face {
+    font-family: 'GothamBold';
+    src: url('fonts/gotham-bold/gotham-bold.eot');
+    src: url('fonts/gotham-bold/gotham-bold.eot') format('embedded-opentype'),
+        url('fonts/gotham-bold/gotham-bold.woff') format('woff'),
+        url('fonts/gotham-bold/gotham-bold.ttf') format('truetype'),
+        url('fonts/gotham-bold/gotham-bold.svg#GothamBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_nova_rgregular';
+    src: url('fonts/proximanova-regular-webfont/proximanova-regular-webfont.eot');
+    src: url('fonts/proximanova-regular-webfont/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/proximanova-regular-webfont/proximanova-regular-webfont.woff') format('woff'),
+        url('fonts/proximanova-regular-webfont/proximanova-regular-webfont.ttf') format('truetype'),
+        url('fonts/proximanova-regular-webfont/proximanova-regular-webfont.svg#proxima_nova_rgregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'proxima_novasemibold';
+    src: url('fonts/proximanova-semibold-webfont/proximanova-semibold-webfont.eot');
+    src: url('fonts/proximanova-semibold-webfont/proximanova-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/proximanova-semibold-webfont/proximanova-semibold-webfont.woff') format('woff'),
+        url('fonts/proximanova-semibold-webfont/proximanova-semibold-webfont.ttf') format('truetype'),
+        url('fonts/proximanova-semibold-webfont/proximanova-semibold-webfont.svg#proxima_novasemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*-----_1_------ fonts end---------------*/
+
+
+
+
+/*-----_2_------ HTML5 Reset---------------*/
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+dialog,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+font,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+hr,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+meter,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+progress,
+q,
+rp,
+rt,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video,
+xmp {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+b,
+strong {
+    font-weight: bold;
+}
+
+img {
+    color: transparent;
+    font-size: 0;
+    vertical-align: middle;
+    -ms-interpolation-mode: bicubic;
+}
+
+li {
+    display: list-item;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th,
+td,
+caption {
+    font-weight: normal;
+    vertical-align: top;
+    text-align: left;
+}
+
+q {
+    quotes: none;
+}
+
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+sub,
+sup,
+small {
+    font-size: 75%;
+}
+
+sub,
+sup {
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+svg {
+    overflow: hidden;
+}
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {
+    border: none;
+}
+/*-----_2_------Ресет end---------------*/
+
+
+
+
+/*-----3_------Разметка страницы---------------*/
+body {
+    font-size: 62.5%;
+    background: #efefeb;
+    width: 100%;
+    min-height: 100%;
+}  
+
+.products{
+    width: 720px;
+    clear: both;
+}
+
+.products .product{
+    display: inline;
+    float: left;
+    margin: 10px;
+    width: 220px;
+}
+
+.products.genre2{
+    margin-top: 40px;
+
+}
+
+.photo_product{
+    height: 100px;
+    line-height: 100px;
+    text-align: center; /*Картинка товара по-х поцентру */
+}
+
+.photo_product img{
+    display: inline-block;
+    vertical-align: bottom; /*Картинка товара по-у выровняна по низу */
+}
+
+
+.products.genre1 .ton{
+    width: 140px;
+    margin: 0px auto;
+}
+
+.products.genre2 .ton{
+    width: 160px;
+    margin: 0px auto;
+}
+
+.clear{
+    clear:both;
+    display:block;
+    overflow:hidden;
+    visibility:hidden;
+    width:0;
+    height:0
+}
+/*-----_3_------Разметка страницы закончена---------------*/
+
+
+/*-----_4_------Стили текста-----------------------------*/
+.specification{
+    color: #372f2b;
+    width: 160px;
+}
+
+.genre1 .specification{ 
+    font-family:'proxima_novasemibold', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: left;
+    margin: 20px 20px 20px 40px;
+}
+
+.genre2 .specification{
+    font-family: 'proxima_nova_rgregular', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    margin: 20px 30px 20px 20px;
+}
+
+.genre1 .price{
+    font-family:'proxima_novasemibold', Arial, Helvetica, sans-serif;
+    float: right;
+    color: #372f2b;
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: -7px;
+
+}
+
+.genre2 .price{
+    font-family:'proxima_novasemibold', Arial, Helvetica, sans-serif;
+    float: left;
+    color: #372f2b;
+    font-size: 15px;
+}
+/*-----_4_------Стили текста end-----------------*/
+
+
+
+/*-----_5_-------Рейтинг -----------------------*/
+
+/*-----
+клас .blue для синей звёздочки
+клас .orange для оранжесой
+-----------*/
+
+.rating{
+    list-style: none;
+    padding: 0px;
+}
+
+.rating li span{
+    background: url("images/star.png") 0 0 no-repeat;
+    display: block;
+    float: left;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+}
+
+.rating.blue  li span.active{
+    background-position: 0px -14px;
+}
+
+.rating.orange  li span.active{
+    background-position: 0px -30px;
+}
+/*-------_5_------Рейтинг end ---------------*/
+
+
+
+/*-----_6_-------Кнопка купить ---------------*/
+/*-----
+клас .white для белой кнопки
+клас .blue для синей.
+По умолчанию коричневый цвет.
+-----------*/
+.bat_buy{
+    float: right;
+    display: block;
+    position: relative;
+    text-align: right;
+    text-decoration: none;
+    width: 80px;
+    padding-right: 15px;
+    height: 24px;
+    line-height: 24px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    background: #3f2d29;
+    margin-top: -3px;
+}
+
+.bat_buy.blue{
+    background: #4380bc;
+}
+
+.bat_buy.white{
+    background: #fff4f4;
+}
+
+.bat_buy .text_buy{
+    font-family: 'GothamBold', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: #ffffff;
+}
+
+.bat_buy.white .text_buy{
+    color: #372f2b;
+}
+
+.bat_buy .basket{
+    background: url("images/icon-basket.png") 0 0 no-repeat;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 1px;
+    margin-top: 5px;
+}
+
+.bat_buy.white .basket{
+    background-position: 0px -20px;
+}
+
+.bat_buy .angle{
+    position: absolute;
+    left: -8px;
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-right: 9px solid #3f2d29;
+    border-bottom: 12px solid transparent;
+
+}
+
+.bat_buy.white .angle{
+    border-right: 9px solid #ffffff;
+}
+
+.bat_buy.blue .angle{
+    border-right: 9px solid #4380bc;;
+}
+/*-----_6_-------Кнопка купить end ---------------*/
